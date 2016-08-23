@@ -1,0 +1,25 @@
+{
+    "name": "lunch-wx-api",
+    "version": "1.0.0",
+    "description": "lunch-wx-api",
+    "main": "server.js",
+    "dependencies": {},
+    "devDependencies": {
+        "del": "^2.2.0",
+        "gulp": "github:gulpjs/gulp#4.0",
+        "gulp-replace": "^0.5.4",
+        "yargs": "^4.8.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "gulp debug-watch --debug true",
+        "build-dev": "gulp debug --debug true",
+        "build-prod": "gulp default"
+    },
+    "keywords": [
+        "github"
+    ],
+    "author": "paul.huang",
+    "license": "MIT",
+    "homepage": "https://blog.zuoshachi.com"
+}

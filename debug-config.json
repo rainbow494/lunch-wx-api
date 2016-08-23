@@ -1,0 +1,16 @@
+{
+    "server": {
+        "port": 3000
+    },
+    "weixin": {
+        "devId": "gh_68f2a85d61d5",
+        "appId": "wx9a8c79e3ba4f4724",
+        "appSecret": "f6bae806d998d2cb8806e2faed89cea7",
+        "openId": "olvOZv60YrKqH5fo85tNtiiA7gVY"
+    },
+    "api": {
+        "wxGetToken": "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET",
+        "wxGetUserInfo": "https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN",
+        "wxGetUserAccount": "http://lunch.zuoshachi.com/api/weixin/account/:USERNAME"
+    }
+}
