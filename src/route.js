@@ -139,7 +139,7 @@ function getContent(queryType, queryParams) {
         case 'queryAccountByName':
             return queryAccountByName(queryParams);
         default:
-            return Promise.resolve('您输入的命令有误，请联直接联系开发 (rainbow494)');
+            return Promise.resolve('想要更多功能？请联系攻城师(rainbow494)');
     };
 }
 
