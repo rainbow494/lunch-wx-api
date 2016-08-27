@@ -41,7 +41,8 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
 
     var reqXml = req.body.xml;
-    console.log('reqXml:' + reqXml);
+
+    console.log('reqXml:' + reqXml.content);
 
     var queryType = getQueryType(reqXml);
     var queryParams = getQueryParams(reqXml, queryType);
