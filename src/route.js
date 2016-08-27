@@ -139,7 +139,7 @@ function getContent(queryType, queryParams) {
         case 'queryAccountByName':
             return queryAccountByName(queryParams);
         default:
-            return Promise.resolve('有好主意？攻城狮(rainbow494)帮你做到');
+            return Promise.resolve('有好主意？攻城狮 - rainbow494 - 帮你做到');
     };
 }
 
