@@ -41,6 +41,8 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
 
     var reqXml = req.body.xml;
+    console.log('reqXml:' + reqXml);
+
     var queryType = getQueryType(reqXml);
     var queryParams = getQueryParams(reqXml, queryType);
 
@@ -54,7 +56,6 @@ router.post('/', function(req, res) {
             <MsgType><![CDATA[` + msgType + `]]></MsgType>
             <Content><![CDATA[` + content + `]]></Content>
             </xml>`;
-        console.log(result);
         res.send(result);
     });
 });
