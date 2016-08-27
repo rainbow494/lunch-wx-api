@@ -139,7 +139,7 @@ function getContent(queryType, queryParams) {
         case 'queryAccountByName':
             return queryAccountByName(queryParams);
         default:
-            return Promise.resolve('想要更多功能？请联系攻城狮(rainbow494)');
+            return Promise.resolve('有好主意？攻城狮(rainbow494)帮你做到');
     };
 }
 
@@ -152,7 +152,7 @@ function queryAccountByName(queryParams) {
         .then(function(userAccounts) {
             var results = JSON.parse(userAccounts);
             if (results[0].account)
-                return '您的本月额为:' + results[0].account;
+                return '您的余额为:' + results[0].account;
             else
                 return '0';
         })
