@@ -147,7 +147,7 @@ function getContent(queryType, queryParams) {
 
 function queryAccountByName(queryParams) {
     if (!queryParams || !queryParams.name)
-        return 0;
+        return Promise.resolve('请输入您要查询的用户姓名（用户名显示在您的每周邮件内）');
 
     var requestUrl = wxGetUserAccountApi.replace(':USERNAME', queryParams.name);
     return rp(requestUrl)

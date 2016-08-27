@@ -1,6 +1,6 @@
 {
     "server": {
-        "port": 3000
+        "port": 3100
     },
     "weixin": {
         "devId": "gh_68f2a85d61d5",
